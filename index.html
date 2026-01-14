@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Atarivideomusic.net</title>
+  <meta name="description" content="Your Go To Hub For Everything Atari Video Music On A Never Ending Quest To Visualize Everything!!!">
+ 
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+CiAgPHBvbHlnb24gcG9pbnRzPSI1MCAxMCwgOTAgNTAsIDUwIDkwLCAxMCA1MCIgZmlsbD0iI2ZmNjYwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cG9seWdvbiBwb2ludHM9IjUwIDMwLCA3MCA1MCwgNTAgNzAsIDMwIDUwIiBmaWxsPSIjZmZmZjAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxwb2x5Z29uIHBvaW50cz0iNTAgNDUsIDU1IDUwLCA1MCA1NSwgNDUgNTAiIGZpbGw9IiMwMGZmMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPg==">
+  
+  <link rel="icon" type="image/png" sizes="512x512" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/512px-AtariFuji.svg.png">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7a/AtariFuji.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/180px-AtariFuji.svg.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/120px-AtariFuji.svg.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/152px-AtariFuji.svg.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/167px-AtariFuji.svg.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/180px-AtariFuji.svg.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/AtariFuji.svg/1024px-AtariFuji.svg.png">
+  
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Helvetica+Neue+Condensed:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-106143.jpg') repeat; /* Solid walnut wood background */
+      background-size: 600px auto;
+      color: #f0f0e0;
+      font-family: 'Helvetica Neue Condensed', 'Arial Narrow', 'Helvetica Condensed', Arial, sans-serif; /* Matching machine's condensed font */
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+      border-bottom: 6px solid #8b4513;
+    }
+    h1 {
+      font-family: 'Bungee', cursive;
+      font-size: 2.8em;
+      margin: 0;
+      color: #ff6600;
+      text-shadow: 3px 3px 6px #000, 0 0 15px #ff6600;
+      letter-spacing: 4px;
+    }
+    h2 {
+      font-size: 2.2em;
+      color: #ff9900;
+      text-shadow: 2px 2px 5px #000;
+      margin: 30px 0 15px;
+      border-bottom: 3px solid #a0a0a0;
+      padding-bottom: 8px;
+    }
+    .warning {
+      color: #ffff99;
+      font-size: 1.5em;
+      margin: 20px 0;
+      text-shadow: 0 0 10px #ffff00;
+    }
+    section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+      background: linear-gradient(135deg, #d0d0d0, #a0a0a0, #c0c0c0); /* Psychedelic accents with gradients */
+      border: 4px solid #333;
+      border-radius: 6px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7), 0 0 20px rgba(255,102,0,0.5); /* Groovy glow */
+    }
+    p, ul {
+      font-size: 1.3em;
+      color: #111;
+    }
+    a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ff9900;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #333;
+      border-radius: 4px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      margin: 20px auto;
+      display: block;
+    }
+    figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+    figcaption {
+      font-size: 1.1em;
+      color: #222;
+      margin-top: 10px;
+    }
+    .twitch-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .twitch-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border: 5px solid #8b4513;
+      border-radius: 6px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+    .twitch-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
+    }
+    .community-card {
+      background: linear-gradient(135deg, #b0b0b0, #909090);
+      border: 4px solid #444;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+      text-align: center;
+      padding: 15px;
+    }
+    .community-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(255,102,0,0.4);
+    }
+    .community-card a, .community-card button {
+      display: block;
+      margin: 10px auto;
+      padding: 8px 20px;
+      font-size: 1.1em;
+      background: #ff6600;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+    }
+    .community-card button {
+      margin-top: 10px;
+    }
+    .video-card {
+      background: linear-gradient(135deg, #b0b0b0, #909090);
+      border: 4px solid #444;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+    .video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(255,102,0,0.4);
+    }
+    .info {
+      padding: 15px;
+      color: #111;
+    }
+    .title {
+      font-size: 1.4em;
+      margin: 0 0 10px;
+      color: #ff6600;
+    }
+    .desc {
+      font-size: 1.1em;
+      color: #222;
+    }
+    #load-more {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 30px;
+      font-size: 1.3em;
+      background: #ff6600;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #load-more:hover {
+      background: #ff9900;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #ddd;
+      font-size: 1.1em;
+      background: rgba(0,0,0,0.7);
+      border-top: 4px solid #8b4513;
+    }
+    /* Epilepsy Modal */
+    #epilepsy-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.95);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.6s ease;
+    }
+    #epilepsy-modal.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .modal-content {
+      max-width: 90%;
+      width: 620px;
+      background: #000;
+      border: 8px solid #ffcc00;
+      border-radius: 12px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 0 40px #ffcc00;
+      color: #ffcc00;
+    }
+    .modal-content h2 {
+      font-size: 2.8em;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+      color: #ffff00;
+      text-shadow: 0 0 15px #ffff00;
+    }
+    .modal-content p {
+      font-size: 1.5em;
+      margin: 15px 0 30px;
+      color: #fff;
+    }
+    #acknowledge-btn {
+      padding: 18px 50px;
+      font-size: 1.6em;
+      font-weight: bold;
+      background: #ff6600;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #acknowledge-btn:hover {
+      background: #ffff00;
+      transform: scale(1.05);
+    }
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.5em; letter-spacing: 1px; }
+      h2 { font-size: 1.8em; }
+      p, ul { font-size: 1.1em; }
+      .container { grid-template-columns: 1fr; }
+      section { padding: 20px; }
+      body { background-size: 300px auto; } /* Smaller background tile for mobile */
+      header { padding: 20px 10px 10px; }
+      .modal-content { padding: 20px 15px; }
+      .modal-content h2 { font-size: 2em; }
+      .modal-content p { font-size: 1.2em; }
+      #acknowledge-btn { padding: 12px 30px; font-size: 1.2em; }
+      header p:first-of-type { font-size: 1.2em !important; }
+      header p:last-of-type img { height: 30px; }
+      figcaption { font-size: 0.9em; }
+      img { max-width: 80%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Epilepsy Warning Modal -->
+  <div id="epilepsy-modal">
+    <div class="modal-content">
+      <h2>PHOTOSENSITIVE EPILEPSY WARNING</h2>
+      <p>This website features content from the Atari Video Music C-240, including rapidly flashing lights, strobing patterns, and intense color changes that may trigger seizures in people with photosensitive epilepsy.</p>
+      <p><strong>Viewer discretion is strongly advised.</strong> If you or anyone watching has a history of photosensitive seizures, please leave now.</p>
+      <button id="acknowledge-btn">I UNDERSTAND AND WISH TO CONTINUE</button>
+    </div>
+  </div>
+  <header>
+    <h1>ATARIVIDEOMUSIC.NET BY OGDOMTHEATARIDJ</h1>
+    <p style="font-size:1.6em; color:#ff9900;">Model C-240 • 1977 • The Original Music Visualizer</p>
+    <p style="display: flex; justify-content: center; gap: 20px;">
+      <a href="https://www.youtube.com/@OGDomTheAtariDJ" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/640px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" style="height:40px; width:auto;" loading="lazy"></a>
+      <a href="https://www.twitch.tv/ogdomtheataridj" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/512px-Twitch_logo.svg.png" alt="Twitch" style="height:40px; width:auto;" loading="lazy"></a>
+      <a href="https://kick.com/ogdomtheataridj" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Kick_logo.svg/512px-Kick_logo.svg.png" alt="Kick" style="height:40px; width:auto;" loading="lazy"></a>
+      <a href="https://www.tiktok.com/@ogdomtheataridj" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/512px-Tiktok_icon.svg.png" alt="TikTok" style="height:40px; width:auto;" loading="lazy"></a>
+      <a href="https://x.com/OGDomTheAtariDJ" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_(white).png" alt="X" style="height:40px; width:auto;" loading="lazy"></a>
+    </p>
+  </header>
+  <section id="history">
+    <h2>The History of the Atari Video Music</h2>
+    <p>In the mid-1970s, Atari, Inc., riding the wave of its early video game success with titles like the home version of Pong, ventured into uncharted territory with a device that promised to transform ordinary music into a visual spectacle. Developed under the codename "Project Mood" by Robert J. Brown, the inventor of the home Pong system, the Atari Video Music (Model C240) emerged as the world's first commercial electronic music visualizer. Released in 1977 at an introductory price of $169.95—equivalent to about $882 in 2024—the unit was manufactured by Atari, Inc., and designed to connect to a hi-fi stereo system, interpreting musical waveforms into animated displays of colors and shapes on a television screen.</p>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Atari_Video_Music.jpg" alt="Original Atari Video Music C-240 console" loading="lazy">
+      <figcaption>Original Atari Video Music C-240 console</figcaption>
+    </figure>
+    <p>The development of the Video Music was shrouded in a mix of innovation and anecdote. Robert Brown, the key designer, crafted a system that hooked up via left and right RCA jacks to an audio amplifier, with a brushed metal face and particle board sides veneered in walnut. It featured a power button, five potentiometer knobs for controlling gain (to adjust pattern size), color (from solid hues to rainbow effects), and contour (shaping visuals from soft to geometric), and 12 push-buttons for modes like solid shapes, holes, rings, auto-cycling, and arrays of horizontal or vertical images. A standout feature was the adhesive-backed switch box, glued to the TV's back, which included a 75-ohm pass-through F connector. This allowed the television antenna or cable to stay connected, eliminating the hassle of constant unplugging when switching between normal broadcasts and the visualizer's output on VHF channels 3 or 4 by default.</p>
+    <figure>
+      <img src="https://designyoutrust.com/wp-content/uploads/2024/01/1111-6.jpg" alt="Atari Headquarters in Sunnyvale, California, 1976" loading="lazy">
+      <figcaption>Atari Headquarters in Sunnyvale, California, 1976</figcaption>
+    </figure>
+    <p>Atari's promotional tours for the device added a layer of legend to its creation. Design engineer Al Alcorn recounted how a Sears representative, upon seeing the invention, quipped about what the developers were "smoking," only for a technician to step forward holding a lit joint in response. By March 1978, the technology was formalized in a patent titled "Audio activated video display" (US 4081829), assigned to Atari Inc., which described how audio energy from stereo channels generated objects on screen—solid, rings, or subtracted forms—with colors based on zero-crossing rates and automatic random cycling if desired.</p>
+    <figure>
+      <img src="https://cdn-blog.adafruit.com/uploads/2022/01/Untitled2-25.png" alt="Atari Video Music visualization in action" loading="lazy">
+      <figcaption>Atari Video Music visualization in action</figcaption>
+    </figure>
+    <p>Launched amid high expectations, the Video Music hit shelves in 1977, but its commercial life was short-lived. Despite its novelty in creating diamond-shaped visualizations—where the outer part represented the left audio channel and the inner the right, pulsing with music's intensity and mellowness—it failed to capture widespread appeal. Production was discontinued after just one year, marking it as commercially unsuccessful, with sales failing to sustain the company's momentum in non-gaming ventures.</p>
+    <figure>
+      <img src="https://preview.redd.it/atari-video-music-sears-advertisement-circa-1977-v0-0bl4fotktsvb1.jpg?width=640&crop=smart&auto=webp&s=f32ca7b1290d9c5329a67fd52cc40eb08a5323ff" alt="Sears Advertisement for Atari Video Music (circa 1977)" loading="lazy">
+      <figcaption>Sears Advertisement for Atari Video Music (circa 1977)</figcaption>
+    </figure>
+    <p>Reception was tepid but acknowledged its ingenuity. In a 1978 "VideoTest Report" in *Video* magazine's Summer issue, reviewers described it as "a well-constructed machine and an interesting component to be used as an adjunct to stereo sound," yet cautioned that "once the novelty wears off the display can become somewhat monotonous." They recommended it for those who found psychedelic displays "relaxing, stimulating, or therapeutic," positioning it as a niche accessory rather than a must-have.</p>
+    <figure>
+      <img src="https://i.ytimg.com/vi/KBK7wp3PQh0/maxresdefault.jpg" alt="Atari Video Music in use" loading="lazy">
+      <figcaption>Atari Video Music in use</figcaption>
+    </figure>
+    <p>Culturally, the Atari Video Music left a subtle but enduring mark, appearing in unexpected places. The band Devo incorporated its screens as backgrounds in their music video for "The Day My Baby Gave Me a Surprise" and again, connected to a vocoder, in "Beautiful World." Daft Punk featured a unit in their "Robot Rock" video, while the diamond patterns echoed in scenes from the 1979 film *Over the Edge*, where the character Johnny watched them in his bedroom. Even in the TV series *The X-Files*, Season 1 Episode 7 ("Ghost in the Machine"), the visuals appeared as part of a surveillance system, testifying to its hypnotic, trippy allure in mid-1970s pop culture. Today, enthusiasts restore and modify units, adding features like S-Video outputs and internal power supplies for better compatibility with contemporary setups.</p>
+    <figure>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYDJWfVipX8CnrBaD_r2pEFQjBuXoTGuqVxYGA2Cry4pPDL2n1bbj2qiYaTYsee_97xIXOlhV8N-iJcferAtfBFu123I_U681hV00aoFj-BQs-InvR0eBMyipnDbygBz4N18B5/s1600/IMG_6585.jpg" alt="Atari Video Music with Original Box and Manual" loading="lazy">
+      <figcaption>Atari Video Music with Original Box and Manual</figcaption>
+    </figure>
+  </section>
+  <section id="development">
+    <h2>Development</h2>
+    <p>The development of the Atari Video Music began in 1976 amid Atari's rapid growth from arcade games to home entertainment systems. The project was led by engineers Robert J. Brown, who had previously designed the home version of Pong, and Harold Lee, who contributed to the custom chip for Atari’s Home Pong console in 1975. Codenamed "Project Mood," the goal was to create a device that produced real-time visuals synchronized to music using a custom integrated circuit, effectively merging audio and video in a consumer product.</p>
+    <p>The Video Music analyzes left and right stereo channels separately: amplitude controls pattern size and intensity, while frequency influences color and shape. The visuals manifest as diamond-like patterns — the outer diamond representing the left channel and the inner one the right — that pulse, morph, and change color in response to the music. It outputs modulated RF video on Channels 3 or 4, compatible with any standard TV of the era. This technology shared electrical similarities with the Atari VCS (2600), particularly in video signal generation, as Brown was concurrently working on the VCS during the Video Music's development.</p>
+    <p>The creative environment at Atari was uniquely permissive, contrasting sharply with more corporate entities like IBM. Bushnell noted, “Most of my engineers were stoned,” reflecting a free-spirited atmosphere that encouraged bold ideas but sometimes led to unconventional outcomes. This mindset attracted young, innovative talent eager to push technological boundaries.</p>
+    <p>The device was patented as US 4081829, "Audio Activated Video Display," filed on August 23, 1976, and granted on March 28, 1978, to inventor Robert J. Brown and assigned to Atari Inc. It describes an interface for visual color displays on unaltered TVs, deriving audio energy from stereo channels to create objects with colors based on zero-crossing rates.</p>
+    <p>Key figures like Al Alcorn, Atari's chief engineer, and Nolan Bushnell, the founder, played oversight roles. Alcorn described it as Atari's "weirdest product ever," while Bushnell highlighted the project's chaotic yet creative process. The Video Music's development exemplified Atari's experimental phase, blending engineering prowess with 1970s counterculture.</p>
+    <figure>
+      <img src="https://i0.wp.com/www.arcadeattack.co.uk/wp-content/uploads/2017/11/al_alcorn_pong_prototype.jpg?fit=600%2C400&ssl=1" alt="Al Alcorn" loading="lazy">
+      <figcaption>Al Alcorn</figcaption>
+    </figure>
+    <figure>
+      <img src="https://i.guim.co.uk/img/static/sys-images/Technology/Pix/pictures/2009/3/18/1237393826656/Nolan-Bushnell-001.jpg?width=465&dpr=1&s=none&crop=none" alt="Nolan Bushnell" loading="lazy">
+      <figcaption>Nolan Bushnell</figcaption>
+    </figure>
+  </section>
+  <section id="inventor">
+    <h2>The Inventor: Robert J. Brown</h2>
+    <p>Robert J. Brown was an influential engineer at Atari, Inc., during the company's pioneering era in the 1970s. He is best known for designing the Atari Video Music (Model C-240), released in 1977, which is widely regarded as the world's first commercial electronic music visualizer. This device connected to a stereo system and TV, converting audio signals into colorful, pulsing geometric patterns on the screen, serving as a precursor to modern music visualization software.</p>
+    <p>Brown also played a key role in developing the home version of Pong, Atari's groundbreaking 1975 console that brought arcade-style gaming into living rooms. As Atari's director of microelectronics, he contributed to various projects, including shared technology with the Atari VCS (2600) console. He held the patent for US 4081829, titled "Audio Activated Video Display," submitted on August 23, 1976, and granted on March 28, 1978, which detailed the Video Music's innovative audio-to-visual conversion system using stereo channels to generate dynamic shapes and colors.</p>
+    <p>After his time at Atari, Brown co-founded Starpath (originally Arcadia) in 1981 with former colleagues, a third-party developer that created games on cassette tapes for the Atari VCS, such as Phaser Patrol and Communist Mutants from Space. His work exemplified Atari's experimental spirit, blending engineering with the era's countercultural influences to push boundaries in consumer electronics and gaming.</p>
+    <figure>
+      <img src="https://preview.redd.it/robert-j-brown-the-inventor-of-the-atari-video-music-v0-smbqo4agtgcg1.jpeg?auto=webp&s=0b6a49e83358a6e75ec7ccd75aa8b6c16960e9ba" alt="Robert J. Brown" loading="lazy">
+      <figcaption>Robert J. Brown, Inventor of the Atari Video Music</figcaption>
+    </figure>
+  </section>
+  <section id="patent">
+    <h2>Atari Video Music Patent Explanation (US 4081829)</h2>
+    <p>The Atari Video Music is based on US Patent 4081829, titled "Audio Activated Video Display," invented by Robert J. Brown and assigned to Atari Inc. Filed on August 23, 1976, and published on March 28, 1978.</p>
+    <p><strong>Abstract:</strong> An interface unit for providing visual color display of objects on an unaltered TV receiver which are directly associated with the music on an audio source. Audio energy is derived from separate channels of a stereo system. This audio information is presented on the screen in the form of objects in various arrangements. Color is derived based on the zero crossing rate of each channel. Each channel has its own color associated with it. Objects may be solid, or rings, or one may be "subtracted" one from the other. If desired, the different arrays may be selected automatically in a random manner. A spectral color modulator using phase shifted techniques is incorporated.</p>
+    <p><strong>Detailed Explanation:</strong> The system connects stereo audio to a TV's antenna terminals, processing signals to generate visuals. Audio from left/right channels is amplified; zero-crossing detectors determine color, energy detectors control brightness. Ramp generators create V-shaped waveforms for diamond shapes. Colors shift via phase-delayed MOS circuits. Shapes include solid (OR), hole (exclusive OR), ring (delayed signals). Auto mode randomizes using audio variations.</p>
+    <p><strong>Claims Summary:</strong> Covers ramp signal generation, audio comparison for luminance/chroma, zero-crossing color modulation, shape selectors, array multiplication, and random variation.</p>
+    <p><strong>Quotes from Patent:</strong> "Audio energy is derived from separate channels of a stereo system. This audio information is presented on the screen in the form of objects in various arrangements." "Color is derived based on the zero crossing rate of each channel."</p>
+    <p><a href="https://patentimages.storage.googleapis.com/b7/ab/67/37a336b2a6caa4/US4081829.pdf" download>Download Original Patent (PDF)</a></p>
+  </section>
+  <section id="gallery">
+    <h2>Gallery of Photos, Advertisements, Promotional Materials, and Logos</h2>
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Atari_Video_Music.jpg" alt="Highest Resolution Photo of Atari Video Music C-240 Unit" loading="lazy">
+      <img src="https://preview.redd.it/atari-video-music-sears-advertisement-circa-1977-v0-0bl4fotktsvb1.jpg?width=640&crop=smart&auto=webp&s=f32ca7b1290d9c5329a67fd52cc40eb08a5323ff" alt="Introducing Music You Can Watch - Sears Advertisement for Atari Video Music (circa 1977)" loading="lazy">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYDJWfVipX8CnrBaD_r2pEFQjBuXoTGuqVxYGA2Cry4pPDL2n1bbj2qiYaTYsee_97xIXOlhV8N-iJcferAtfBFu123I_U681hV00aoFj-BQs-InvR0eBMyipnDbygBz4N18B5/s1600/IMG_6585.jpg" alt="Atari Video Music with Original Box and Manual" loading="lazy">
+      <img src="https://i.ytimg.com/vi/KBK7wp3PQh0/maxresdefault.jpg" alt="Atari Video Music Promotional Thumbnail" loading="lazy">
+      <img src="https://images.equipboard.com/uploads/item/image/103669/atari-video-music-c-240-xl.webp?v=1754870737" alt="Atari Video Music C-240 Promo" loading="lazy">
+      <img src="https://compote.slate.com/images/f524ee80-a88d-4ad3-a524-f1642faeccc6.jpeg?crop=1560%2C1040%2Cx0%2Cy0" alt="Atari Video Music advertisement" loading="lazy">
+      <img src="https://media.invisioncic.com/r322239/monthly_2022_03/VideoMusic.jpg.74cf9ef348363de19b62f6aeb6efb9a8.jpg" alt="Atari Video Music promotional image" loading="lazy">
+      <img src="https://i.redd.it/160f4rxjqfl71.jpg" alt="Atari Video Music advertisement" loading="lazy">
+      <img src="https://media.invisioncic.com/r322239/monthly_2022_03/Cropped.jpg.ad4d7ce1cab8f7fb65bb60478a518f7d.jpg" alt="Cropped Atari Video Music advertisement" loading="lazy">
+    </div>
+  </section>
+  <section id="manual">
+    <h2>Owner's Manual (Key Excerpts & Summary)</h2>
+    <p>From the original Atari C-240 Owner's Manual:</p>
+    <ul>
+      <li><strong>Setup:</strong> Connect RF switchbox to TV antenna terminals, then stereo audio via RCA cables to left/right inputs.</li>
+      <li><strong>Controls:</strong>
+        <ul>
+          <li>GAIN L/R: Adjust input sensitivity (pattern size)</li>
+          <li>COLOR: Shift from solid hues to rainbow effects</li>
+          <li>CONTOUR L/R: Soft organic → sharp geometric shapes</li>
+          <li>SHAPE: Solid, Hole, Ring, Auto</li>
+          <li>Horizontal/Vertical: Multiply images (1–8 in rows/columns)</li>
+          <li>AUTO ALL: Cycle most settings randomly</li>
+        </ul>
+      </li>
+      <li><strong>Troubleshooting:</strong> No pattern → check gain/audio; flickering → lower gain or change channel.</li>
+    </ul>
+    <p>Full original scan available online (e.g., ctrl-alt-rees.com).</p>
+    <p><a href="https://ctrl-alt-rees.com/downloads/atarivideomusic/Atari_C240_Video_Music_Manual.pdf" download>Download Original Manual (PDF)</a></p>
+  </section>
+  <section id="schematics">
+    <h2>Schematics</h2>
+    <p>The Atari Video Music uses analog circuitry: audio amps → contour/gain processing → shape generators → video timing → RF modulator.</p>
+    <p>Key sections include power supply (±12V, +5V), vertical/horizontal counters (4013/4011 ICs), audio op-amps (LM324), and shape logic.</p>
+    <img src="https://ctrl-alt-rees.com/downloads/atarivideomusic/Atari_C240_Video_Music_Schematic.png" alt="Atari Video Music full schematic diagram" loading="lazy">
+    <p><a href="https://ctrl-alt-rees.com/downloads/atarivideomusic/Atari_C240_Video_Music_Schematic.png" download>Download Full Schematic (PNG)</a></p>
+    <p><a href="https://patentimages.storage.googleapis.com/b7/ab/67/37a336b2a6caa4/US4081829.pdf" download>Download Original Patent Schematic (PDF)</a></p>
+  </section>
+  <section id="restoration">
+    <h2>Restoration</h2>
+    <p>Check out Ben Heck's video on restoring the Atari Video Music:</p>
+    <a href="https://www.youtube.com/watch?v=INnpnJvDXDg" target="_blank">Ben Heck's Atari Video Music Teardown</a>
+  </section>
+  <section id="capacitor-kit">
+    <h2>Capacitor Replacement Kit</h2>
+    <p>To restore your Atari Video Music, consider replacing the capacitors. A dedicated axial cap kit is available for purchase.</p>
+    <p><a href="https://console5.com/store/atari-video-music-model-c240-axial-cap-kit.html" target="_blank">Buy Atari Video Music Axial Cap Kit ($12.95) from Console5</a></p>
+    <p>This kit includes high-quality, high-temp parts from Nichicon, Rubycon, Panasonic, and others.</p>
+  </section>
+  <div class="twitch-section">
+    <h2>LIVE: Atari Visuals & Vibes</h2>
+    <div class="twitch-embed">
+      <iframe src="https://player.twitch.tv/?channel=ogdomtheataridj&parent=atarivideomusic.net&muted=false" frameborder="0" allowfullscreen scrolling="no" loading="lazy"></iframe>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://livebeam.chat/ogdomtheataridj" target="_blank" style="padding: 12px 30px; font-size: 1.3em; background: #ff6600; color: #000; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; text-decoration: none;">Tip Live</a>
+    </div>
+  </div>
+  <section id="community">
+    <h2>Community</h2>
+    <div class="container">
+      <div class="community-card">
+        <img src="https://download.logo.wine/logo/Reddit/Reddit-Logo.wine.png" alt="Reddit Logo" style="max-width: 200px; margin: 10px auto;" loading="lazy">
+        <a href="https://www.reddit.com/r/atarivideomusic" target="_blank">Join r/atarivideomusic</a>
+      </div>
+      <div class="community-card">
+        <img src="https://download.logo.wine/logo/Discord_(software)/Discord_(software)-Logo.wine.png" alt="Discord Logo" style="max-width: 200px; margin: 10px auto;" loading="lazy">
+        <a href="https://discord.gg/QEquP7wNhy" target="_blank">Join Discord</a>
+      </div>
+      <div class="community-card">
+        <img src="https://i.pinimg.com/736x/5a/f3/84/5af384df1654c7cc7d33589c744a2ea5.jpg" alt="Minecraft Logo" style="max-width: 200px; margin: 10px auto;" loading="lazy">
+        <p>Address: mc.atarivideomusic.net</p>
+        <p>Port: 25565</p>
+        <p>(Java/Bedrock crossplay)</p>
+        <a href="minecraft:?addExternalServer=AtariVideoMusic|mc.atarivideomusic.net:25565" style="display: block; padding: 8px 20px; font-size: 1.1em; background: #ff6600; color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; text-align: center;">Join (Bedrock)</a>
+        <button style="display: block; margin-top: 10px; padding: 8px 20px; font-size: 1.1em; background: #ff6600; color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;" onclick="navigator.clipboard.writeText('mc.atarivideomusic.net'); alert('Copied!');">Copy for Java</button>
+      </div>
+    </div>
+  </section>
+  <section id="videos">
+    <h2>All Visualizations from the Channel</h2>
+    <div class="container" id="video-container"></div>
+    <button id="load-more">Load More Videos</button>
+  </section>
+  <footer>
+    © 2026 AtariVideoMusic.net • Created & Maintained by OGDomTheAtariDJ
+  </footer>
+  <script>
+    // Epilepsy modal
+    window.addEventListener('load', () => {
+      document.getElementById('epilepsy-modal').classList.add('show');
+    });
+    document.getElementById('acknowledge-btn').addEventListener('click', () => {
+      document.getElementById('epilepsy-modal').classList.remove('show');
+    });
+    // YouTube - All videos (paginated)
+    const API_KEY = 'AIzaSyCXQuEIK6abUJNqJcus5sVU0ivLsJgoD9A'; // ← Replace with your real key!
+    const CHANNEL_ID = 'UCHnADKl-Hgnm3ZNostj32_A';
+    let nextPageToken = '';
+    const videosContainer = document.getElementById('video-container');
+    const loadMoreBtn = document.getElementById('load-more');
+    async function getUploadsPlaylistId() {
+      const res = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${CHANNEL_ID}&key=${API_KEY}`);
+      const data = await res.json();
+      return data.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+    }
+    async function loadVideos(token = '') {
+      try {
+        const playlistId = await getUploadsPlaylistId();
+        const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=20&key=${API_KEY}${token ? `&pageToken=${token}` : ''}`;
+        const res = await fetch(url);
+        const data = await res.json();
+        data.items?.forEach(item => {
+          const vid = item.snippet.resourceId.videoId;
+          const title = item.snippet.title;
+          const desc = (item.snippet.description || '').substring(0, 150) + '...';
+          const thumb = item.snippet.thumbnails.medium.url;
+          const card = document.createElement('div');
+          card.className = 'video-card';
+          card.innerHTML = `
+            <a href="https://youtube.com/watch?v=${vid}" target="_blank">
+              <img src="${thumb}" alt="${title}" style="width:100%; display:block;" loading="lazy">
+            </a>
+            <div class="info">
+              <h3 class="title">${title}</h3>
+              <p class="desc">${desc}</p>
+            </div>
+          `;
+          videosContainer.appendChild(card);
+        });
+        nextPageToken = data.nextPageToken || '';
+        loadMoreBtn.style.display = nextPageToken ? 'block' : 'none';
+      } catch (e) {
+        console.error(e);
+        videosContainer.innerHTML += '<p style="grid-column:1/-1; text-align:center; color:#900;">Error loading videos – check API key!</p>';
+      }
+    }
+    loadVideos();
+    loadMoreBtn.addEventListener('click', () => nextPageToken && loadVideos(nextPageToken));
+  </script>
+</body>
+</html>
